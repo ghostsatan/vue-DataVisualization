@@ -1,0 +1,201 @@
+/*@mixin scale-half {
+  transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  -o-transform: scale(0.5, 0.5);
+  -moz-transform: scale(0.5, 0.5);
+}
+*/
+
+%scaleHalf {
+  transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  -o-transform: scale(0.5, 0.5);
+  -moz-transform: scale(0.5, 0.5);
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+#content {
+  width: 4096px;
+  height: 1536px;
+  position: relative;
+  background-image: url(../../../../static/img/body_bg.jpg);
+  background-size: 100% 100%;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  width: 2160px;
+  height: 142px;
+  background-image: url(../../../../static/img/title.png);
+  background-size: 100% 100%;
+  left: 50%;
+  margin-left: -1080px;
+  color: white;
+  font-size: 46px;
+  text-align: center;
+  line-height: 122px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  .module {
+    position: absolute;
+    width: 1914px;
+    height: 1353px;
+    line-height: 500px;
+    color: white;
+    font-size: 50px;
+    z-index: 2;
+    cursor: pointer;
+    background-image: url("../../../../static/img/box_bg.png");
+    background-size: 100% 100%;
+    overflow: hidden;
+  }
+  .module[data-type='a'] {
+    left: calc(-41% / 4);
+    top: calc(-40% / 2);
+   /* @include scale-half;*/
+    @extend %scaleHalf;
+  }
+  .module[data-type='b'] {
+    right: calc(-41% / 4);
+    top: calc(-40% / 2);
+    /* @include scale-half; */
+     @extend %scaleHalf;
+  }
+  .module[data-type='c'] {
+    left: calc(-41% / 4);
+    bottom: calc(-40% / 2);
+    /*@include scale-half;*/
+     @extend %scaleHalf;
+  }
+  .module[data-type='d'] {
+    right: calc(-41% / 4);
+    bottom: calc(-40% / 2);
+    /*@include scale-half;*/
+     @extend %scaleHalf;
+  }
+  .module[data-type='s'] {
+    top: 161px;
+    left: calc(50% - 957px);
+  }
+}
+
+.titleModule {
+  width: 281px;
+  line-height: 64px;
+  text-align: center;
+  margin-left: 429px;
+  margin-top: 20px;
+  font-size: 30px;
+  color: #7CC3DE;
+}
+
+.moduleContent {
+  width: calc(100% - 50px);
+  height: calc(100% - 110px);
+  margin: 0px;
+  padding: 0px 25px;
+}
+
+.changeModule {
+  width: 218px;
+  height: 68px;
+  background-image: url(../../../../static/img/btn_qh.png);
+  background-size: 100% 100%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  left: 2781px;
+  top: 120px;
+}
+
+.moduleBox {
+  .el-dialog {
+    width: 100%;
+    height: 295px;
+    background-image: url(../../../../static/img/qh_bg.png);
+    background-size: 100% 100%;
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+  .el-dialog__title {
+    color: white;
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .el-dialog__headerbtn {
+    width: 40px;
+    height: 40px;
+    background-image: url(../../../../static/img/btn_clo.png);
+    background-size: 100% 100%;
+    right: 30px;
+  }
+  .el-dialog__headerbtn i {
+    display: none;
+  }
+}
+
+.checkBoxModule {
+  .el-checkbox {
+    width: calc(20% - 30px);
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(0, 35, 67, 0.3);
+    color: white;
+  }
+  .el-checkbox.is-checked {
+    background-color: rgba(0, 112, 255, 0.6);
+    border: solid 1px #00aeff;
+  }
+  .el-checkbox__label {
+    font-size: 18px;
+  }
+  .el-checkbox.is-checked {
+    .el-checkbox__inner {
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      overflow: hidden;
+    }
+  }
+  .el-checkbox:nth-child(6) {
+    margin-left: 0px;
+  }
+  .el-checkbox__inner {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    width: 22px;
+    height: 22px;
+  }
+  .el-checkbox__inner::after {
+    width: 10px;
+    left: 6px;
+    height: 22px;
+    top: -6px;
+  }
+}

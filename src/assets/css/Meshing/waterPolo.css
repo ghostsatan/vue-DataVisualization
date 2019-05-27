@@ -1,0 +1,20 @@
+.liquidfillBox {
+  position: relative;
+  width: 372px;
+  height: 410px;
+  background-image: url(../../../../static/img/qk.png);
+  background-size: 228px;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 20px;
+  line-height: 11.2;
+  text-align: center;
+  color: white
+}
+.liquidfillBox>div {
+  width: 82%;
+  height: 82%;
+  position: absolute;
+  top: 9%;
+  left: 9%;
+}

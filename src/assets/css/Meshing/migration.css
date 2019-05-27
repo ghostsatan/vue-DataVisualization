@@ -1,0 +1,100 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn)
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn)
+  }
+}
+.content{
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+.contentLeft{
+    float: left;
+    width:1161px;
+    height: 1161px;
+    background-image: url(../../../../static/img/qx_tu.png);
+    background-size: 100% 100%;
+}
+.contentLeftCircle{
+    position: absolute;
+    width: 1072px;
+    height: 1072px;
+    background-image: url(../../../../static/img/qx_yuan.png);
+    background-size: 100% 100%;
+    left: 44.5px;
+    top: 44.5px;
+    -webkit-animation: spin 30s infinite linear;
+    animation: spin 30s infinite linear;
+}
+#earthMap{
+    width: 100%;
+    height: 100%
+}
+.contentRight{
+    float: right;
+    margin-right: 50px;
+    width: 650px;
+    height: 100%;
+}
+.contentrTop{
+    width: 100%;
+    color: #A6D8F9;
+    font-size: 26px;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 116px;
+}
+.contentProvince{
+    width: 100%;
+    margin-top: 45px;
+}
+.provinceModel{
+    width: 80%;
+    margin-left: 10%;
+    height: 55px;
+    line-height:55px;
+    background-color: rgba(2,57,113,0.3);
+    border: solid 1px #4bdbff;
+    border-radius: 4px;
+    margin-bottom: 35px;
+}
+.provinceName{
+    display: block;
+    font-size: 20px;
+    line-height: 55px;
+    float: left;
+    text-indent: 20px;
+}
+.el-progress{
+    float: left;
+    width: 320px;
+    height: 55px;
+    margin-left: 20px;
+    line-height: 47px;
+}
+.provinceNumber{
+        display: block;
+    font-size: 20px;
+    line-height: 55px;
+    float: left;
+    text-indent: 30px;
+}
+.el-progress-bar__outer{
+    background-color: transparent;
+}

@@ -1,0 +1,80 @@
+.el-carousel__item {
+  width: 742px;
+  background-image: url(../../../../static/img/k_4.png);
+  cursor: pointer;
+}
+
+.el-carousel__mask {
+  background-color: transparent;
+}
+
+.el-carousel {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 180px;
+  overflow-x: visible
+}
+
+.el-carousel__arrow {
+  position: absolute;
+  font-weight: bold;
+  font-size: 70px;
+  color: #2CD5E8;
+}
+.arrow_right{
+top: 560px;
+    right: 100px;
+}
+.arrow_left{
+      top: 560px;
+    left: 100px;
+}
+.el-carousel__arrow--left{
+  left:-100px;
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+.el-carousel__arrow--right{
+  right: -64px;
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+.analysisTitle{
+    width: 368px;
+    height: 20px;
+    background-image: url(../../../../static/img/k_tit.png);
+    background-size: 100% 100%;
+    margin-top: 20px;
+    margin-left: 62px;
+    line-height: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+.analysisText{
+  position: absolute;
+  width: 415px;
+  height: 20px;
+  line-height: 30px;
+  font-size: 27px;
+  text-align: center;
+  top: 16px;
+  left: 38px;
+}
+.peoples{
+  width: 650px;
+    height: 680px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.plateFooter{
+    position: absolute;
+  width: 1056px;
+  height: 245px;
+  background-image: url(../../../../static/img/dd.png);
+  background-size:100% 100%;
+    left: 50%;
+    margin-left: -528px;
+    top: 932px;
+}

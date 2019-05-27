@@ -1,0 +1,274 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn)
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn)
+  }
+}
+@keyframes fadeIn{
+  0%{
+    opacity:0
+  }
+  20%{
+    opacity:0
+  }
+  100%{
+    opacity:1
+  }
+}
+@-webkit-keyframes fadeIn{
+  0%{
+    opacity:0
+  }
+  20%{
+    opacity:0
+  }
+  100%{
+    opacity:1
+  }
+}
+
+@keyframes fadeHeight{
+  0%{
+    height:0px
+  }
+  20%{
+    height:0px
+  }
+  100%{
+    height:256px
+  }
+}
+@-webkit-keyframes fadeHeight{
+   0%{
+    height:0px
+  }
+  20%{
+    height:0px
+  }
+  100%{
+    height:256px
+  }
+}
+
+@keyframes fadeHeightZero{
+  0%{
+    height:256px
+  }
+  20%{
+    height:256px
+  }
+  100%{
+    height:0px
+  }
+}
+@-webkit-keyframes fadeHeightZero{
+   0%{
+    height:256px
+  }
+  20%{
+    height:256px
+  }
+  100%{
+    height:0px
+  }
+}
+
+.fadeInShow{
+  animation:fadeIn 2s 1;
+  -webkit-animation:fadeIn 2s 1;
+}
+
+
+.wholeProvince {
+  position: relative;
+  height: 100%
+}
+
+.circle_bg {
+  width: 960px;
+  height: 960px;
+  background-image: url("../../../../static/img/quan.png");
+  -webkit-animation: spin 30s infinite linear;
+  animation: spin 30s infinite linear;
+  margin-left: calc(50% - 480px);
+}
+
+.ShanDong {
+  width: 983px;
+  height: 673px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: calc(-491px + 54px);
+  margin-top: 155px;
+}
+#ShanDong area {
+  outline-style: solid;
+  outline-width: 3px;
+  outline-color: #fcff00;
+  cursor: pointer;
+}
+.pointerCircle{
+    position: absolute;
+    width:36px;
+    height: 36px;
+    background-image: url("../../../../static/img/yuan1.png");
+    background-size: 100% 100%;
+    left: 0px;
+    top: 0px;
+}
+.detailCircle{
+  display: none;
+  position: absolute;
+  width:367px;
+  height: 256px;
+  overflow: hidden;
+  background-image: url("../../../../static/img/kuang1.png");
+    background-size: 100% 100%;
+    z-index: 1;
+}
+.detailLine{
+  position: absolute;
+  height: 1px;
+  z-index: 1;
+  background-color: #35D7ED;
+  width: 60px;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+  animation-fill-mode:both;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+.fadeIn{
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+.fadeHeight{
+  animation-name: fadeHeight;
+  -webkit-animation-name: fadeHeight;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+.fadeHeightZero{
+   animation-name: fadeHeightZero;
+  -webkit-animation-name: fadeHeightZero;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+.detailCity{
+    color: #02B4D8;
+    line-height: 74px;
+    font-size: 27px;
+    text-indent: 70px;
+}
+.cityPopulation,.cityHouse{
+    line-height: 61px;
+    font-size: 20px;
+    text-indent: 50px;
+}
+.actualPopulation,.actualHouse{
+    color: #00D8FE;
+    font-size: 40px;
+}
+.provinceDetail{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width:515px;
+  height: 358px;
+  background-image: url("../../../../static/img/kuang2.png");
+  background-size: 100% 100%;
+  padding: 30px 60px 50px 50px;
+    box-sizing: border-box;
+}
+.provinceDetail>div>div{
+  float: left;
+      letter-spacing: 2px;
+}
+.provinceDetail>div>.icon{
+  width:41px;
+  height: 32px;
+  background-size: 100% 100%;
+  margin-top: 18px;
+     margin-left: 60px;
+    margin-right: 20px;
+}
+.provinceDetail>div{
+      height: 69px;
+    line-height: 69px;
+    text-align: center;
+        color: #00D8FE;
+    font-size: 28px;
+}
+.areaNumber .icon{
+  background-image: url("../../../../static/img/ic_1.png");
+}
+.peopleNumber .icon{
+  background-image: url("../../../../static/img/ic_2.png");
+}
+.moneyNumber .icon{
+  background-image: url("../../../../static/img/ic_3.png");
+}
+.districtNumber .icon{
+  background-image: url("../../../../static/img/ic_4.png");
+}
+.peopleDetail,.houseDetail{
+  position: absolute;
+  width:894px;
+  height: 427px;
+  background-image: url("../../../../static/img/k_1.png");
+  background-size: 100% 100%;
+  bottom: 0px;
+}
+.peopleDetail{
+  left: 20px;
+}
+.houseDetail{
+  right: 20px;
+}
+.detailTitle{
+  width: 445px;
+  height: 20px;
+  background-image: url("../../../../static/img/k_tit.png");
+  background-size: 100% 100%;
+      margin-top: 20px;
+    margin-left: 38px;
+        line-height: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+.detailTitleText{
+    position: absolute;
+    width: 445px;
+    height: 20px;
+    line-height: 30px;
+    font-size: 27px;
+    text-align: center;
+    top: 16px;
+    left: 38px;
+}
+.pillarPeople,.pillarHouse{
+    width: 90%;
+    margin-left: 5%;
+    height: 330px;
+    margin-top: 39px;
+}
