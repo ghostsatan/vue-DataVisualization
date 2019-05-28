@@ -8,7 +8,8 @@
       </div>
     </el-dialog> -->
     <header>城市运行监控</header>
-    <!-- <div class='container' v-cloak>
+    <!-- 拖拽切换视图 -->
+    <div class='container' v-cloak>
       <div class='module' :data-type='newList.key' v-for='(newList, index) 
       
       in newLists' draggable='true' @dragstart='handleDragStart($event, newList)' @dragover.prevent='handleDragOver($event, newList)' :key='"module"+index' @dragenter='handleDragEnter($event, newList)' @dragend='handleDragEnd($event, newList)'>
@@ -19,8 +20,9 @@
           </keep-alive>
         </div>
       </div>
-    </div> -->
-    <div>
+    </div>
+    <!-- 点击切换视图功能 -->
+    <!-- <div>
       <div class="container">
         <div class="module item" @click="clickChart('1')" style="transform: translate(-22.4%,-33.5%) scale(0.33)">
           <Migration></Migration>
@@ -38,7 +40,7 @@
          <IndustrialPark></IndustrialPark>
         </div>
     </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
